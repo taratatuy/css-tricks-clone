@@ -1,0 +1,49 @@
+.homepage {
+    background-color: @soft-black;
+
+    // .homepage::before
+    &::before {
+        content: ' ';
+
+        height: 600px;
+        width: 100%;
+        display: block;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background: linear-gradient(
+            130deg,
+            #ff7a18,
+            #af002d 41.07%,
+            #319197 76.05%
+        );
+        clip-path: @background-wave;
+    }
+
+    // .homepage__header
+    &__header {
+        position: relative;
+        z-index: @main-z-index;
+
+        background: rgba(0, 0, 0, 0.25);
+        box-shadow: inset 0 -2px 5px @black-shadow;
+    }
+
+    // .homepage__main
+    &__main {
+    }
+
+    // .homepage__footer
+    &__footer {
+    }
+
+    // .homepage__svg-store
+    &__svg-store {
+        // .homepage__svg-store._hidden
+        &._hidden {
+            .hidden();
+        }
+    }
+}
