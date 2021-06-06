@@ -13,22 +13,34 @@
         top: 0;
         left: 0;
 
-        background: linear-gradient(
-            130deg,
-            #ff7a18,
-            #af002d 41.07%,
-            #319197 76.05%
-        );
+        background: @main-gradient;
         clip-path: @background-wave;
+    }
+
+    // .homepage>*
+    & > * {
+        position: relative;
+        z-index: @main-z-index;
     }
 
     // .homepage__header
     &__header {
-        position: relative;
-        z-index: @main-z-index;
+        padding: 15px 20px 0;
 
         background: rgba(0, 0, 0, 0.25);
         box-shadow: inset 0 -2px 5px @black-shadow;
+
+        @media (min-width: @small-screen-width) {
+            padding-top: 20px;
+        }
+
+        @media (min-width: @large-screen-width) {
+            padding: 0 2rem;
+        }
+
+        @media (min-width: @extra-large-screen-width) {
+            padding: 0 3rem;
+        }
     }
 
     // .homepage__main

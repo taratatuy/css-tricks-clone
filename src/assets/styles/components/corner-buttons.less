@@ -1,0 +1,27 @@
+.corner-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // .corner-buttons__link
+    &__link {
+        margin-left: 0.5rem;
+        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
+
+        // .corner-buttons__link:hover
+        &:hover {
+            opacity: 0.66;
+        }
+    }
+
+    // .corner-buttons__icon
+    &__icon {
+        width: 28px;
+        height: 28px;
+
+        @media (min-width: @small-screen-width) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
