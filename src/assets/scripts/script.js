@@ -1,6 +1,5 @@
 function setStickyObserver() {
     function showSticky(e) {
-        console.log(e[0].intersectionRatio)
         e[0].target.classList.toggle('_showed', e[0].intersectionRatio != 0)
     }
 
