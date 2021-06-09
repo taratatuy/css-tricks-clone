@@ -16,7 +16,7 @@
 
     // .card__img
     &__img-link {
-        height: 200px;
+        height: 250px;
         display: block;
 
         position: relative;
@@ -24,6 +24,14 @@
         border-top-left-radius: inherit;
         border-top-right-radius: inherit;
         border-bottom-left-radius: inherit;
+
+        @media (max-height: 700px) {
+            height: 150px;
+        }
+    }
+
+    &._mode_unfolding &__img-link {
+        height: 200px;
     }
 
     // .card._mode_unfolding .card__img-link
@@ -103,7 +111,9 @@
     &__disc {
         padding: 1.5rem;
         z-index: 2;
+    }
 
+    &._mode_unfolding &__disc {
         @media (min-width: @medium-screen-width) {
             padding: 3rem;
             flex: 1 1 50%;

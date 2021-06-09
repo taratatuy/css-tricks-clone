@@ -57,3 +57,38 @@
         );
     }
 }
+
+.hover-transparency() {
+    &:hover,
+    &:focus {
+        transition: opacity 0.07s;
+
+        opacity: 0.66;
+    }
+}
+
+.gradient-border() {
+    &::before {
+        content: '';
+        background: @main-gradient;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        z-index: 1;
+        border-radius: 12px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 2;
+        border-radius: 8px;
+    }
+}
