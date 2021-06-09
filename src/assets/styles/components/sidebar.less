@@ -1,0 +1,20 @@
+.sidebar {
+    // .sidebar__sticky-card
+    &__sticky-card {
+        height: 350px;
+
+        position: sticky;
+        top: 2.5rem;
+
+        opacity: 0;
+
+        transition: opacity 0.3s;
+
+        .gradient-border;
+
+        // .sidebar__sticky-card._showed
+        &._showed {
+            opacity: 1;
+        }
+    }
+}
