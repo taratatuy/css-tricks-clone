@@ -1,0 +1,42 @@
+.author-credits {
+    display: flex;
+    align-items: center;
+
+    // .author-credits__avatar
+    &__avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+
+        // .author-credits__avatar:hover
+        // .author-credits__avatar:focus
+        &:hover,
+        &:focus {
+            opacity: 0.66;
+        }
+    }
+
+    // .author-credits__metadata
+    &__metadata {
+        font-size: 1.15rem;
+    }
+
+    // .author-credits__name
+    &__name {
+        color: black;
+        font-weight: bold;
+
+        // .author-credits__name:hover
+        // .author-credits__name:focus
+        &:hover,
+        &:focus {
+            opacity: 0.66;
+        }
+
+        // .author-credits__name._large
+        &._large {
+            color: white;
+        }
+    }
+}

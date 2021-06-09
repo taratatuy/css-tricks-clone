@@ -4,6 +4,17 @@
     box-sizing: border-box;
 
     .font-base;
+    .scrollbar-thick;
+
+    --gap: 1rem;
+
+    @media (min-width: @medium-screen-width) {
+        --gap: 2rem;
+    }
+
+    @media (min-width: @extra-large-screen-width) {
+        --gap: 3rem;
+    }
 }
 
 *,
@@ -14,6 +25,26 @@
 
 body {
     margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 1.5rem;
+
+    line-height: @alter-line-height;
+}
+
+h1 {
+    .h1-font;
+}
+
+h2 {
+    .h2-font;
+}
+
+h3 {
+    .h3-font;
 }
 
 ul,
@@ -27,4 +58,8 @@ a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+}
+
+p {
+    margin: 0;
 }

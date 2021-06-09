@@ -1,0 +1,32 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+
+    // .button._type_direct-link
+    &._type_direct-link {
+        margin: 0 0 1.5rem;
+        padding: 0.4rem 1.5rem;
+
+        align-self: flex-start;
+
+        border-radius: 4px;
+        background-color: #5e5e5e;
+        box-shadow: inset 1px 1px 0 #777, 0 2px 3px @black-shadow;
+
+        color: white;
+        font-family: @h-font-family;
+        font-weight: 700;
+        line-height: 1.4;
+    }
+
+    // .button__icon
+    &__icon {
+        // .button__icon._type_right-arrow
+        &._type_right-arrow {
+            width: 25px;
+            height: 15px;
+
+            transform: translateX(6px) scale(1.5) rotate(-90deg);
+        }
+    }
+}

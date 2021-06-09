@@ -30,21 +30,22 @@
         background: rgba(0, 0, 0, 0.25);
         box-shadow: inset 0 -2px 5px @black-shadow;
 
+        z-index: @overflow-z-index;
+
         @media (min-width: @small-screen-width) {
             padding-top: 20px;
         }
 
         @media (min-width: @large-screen-width) {
-            padding: 0 2rem;
-        }
-
-        @media (min-width: @extra-large-screen-width) {
-            padding: 0 3rem;
+            padding: 0 var(--gap);
         }
     }
 
     // .homepage__main
     &__main {
+        padding-top: var(--gap);
+
+        .main-width-content;
     }
 
     // .homepage__footer
