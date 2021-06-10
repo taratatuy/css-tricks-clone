@@ -193,6 +193,27 @@
   height: 15px;
   transform: translateX(6px) scale(1.5) rotate(-90deg);
 }
+.button._type_default {
+  padding: 0.8rem 1.8rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+  border-bottom: 1px solid #262626;
+  border-right: 1px solid #262626;
+  box-shadow: inset 1px 1px 0 #777, 0 2px 3px rgba(0, 0, 0, 0.4);
+  background-color: #5e5e5e;
+  color: white;
+  font-family: Sentinel SSm A, Sentinel SSm B, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  line-height: 1.4;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+.button._type_default:hover,
+.button._type_default:focus {
+  transition: opacity 0.07s;
+  opacity: 0.66;
+}
 .card {
   background: #fff;
   color: #474747;
@@ -566,24 +587,6 @@
 .board__button {
   grid-column-start: 1;
   grid-column-end: -1;
-  padding: 1rem 1.5rem;
-  display: block;
-  text-align: center;
-  border-radius: 4px;
-  border-bottom: 1px solid #262626;
-  border-right: 1px solid #262626;
-  box-shadow: inset 1px 1px 0 #777, 0 2px 3px rgba(0, 0, 0, 0.4);
-  background-color: #5e5e5e;
-  color: white;
-  font-family: Sentinel SSm A, Sentinel SSm B, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  line-height: 1.4;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-.board__button:hover,
-.board__button:focus {
-  transition: opacity 0.07s;
-  opacity: 0.66;
 }
 .sidebar__sticky-card {
   height: 350px;
@@ -645,6 +648,7 @@
   font-size: 2rem;
   line-height: 1.3;
   margin: 2rem 0 0;
+  align-self: flex-end;
 }
 .footer__form {
   padding: 1.5rem;
@@ -666,7 +670,7 @@
   z-index: -1;
   top: 0;
   right: 100%;
-  width: var(--gap);
+  width: 1rem;
   height: 3rem;
   background: #909090;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
@@ -684,13 +688,44 @@
 }
 .footer__heading {
   color: hsl(25deg 100% 55%);
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.15rem;
   text-transform: uppercase;
   font-weight: normal;
+}
+.footer__heading._margin_none {
+  margin: 0;
 }
 .footer__link {
   line-height: 1.25;
   font-size: 1.1rem;
+}
+.footer__text {
+  font-size: 1.2rem;
+}
+.subscribe-form {
+  display: flex;
+}
+.subscribe-form > * {
+  margin-top: 1.5rem;
+}
+.subscribe-form__input {
+  flex: 1;
+  padding: 0 0.5rem;
+  margin-right: 0.5rem;
+  border: 0;
+  border-radius: 4px;
+  color: black;
+  font-size: 100%;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+.subscribe-form__input::-webkit-input-placeholder,
+.subscribe-form__input:-moz-placeholder,
+.subscribe-form__input::-moz-placeholder,
+.subscribe-form__input:-ms-input-placeholder,
+.subscribe-form__input::-ms-input-placeholder,
+.subscribe-form__input::placeholder {
+  color: hsl(24deg 5% 64%);
 }
 @font-face {
   font-family: 'Sentinel SSm A';
