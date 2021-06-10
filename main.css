@@ -50,6 +50,22 @@
     margin-top: calc(var(--gap) * 5);
   }
 }
+.homepage__logo-star {
+  width: 120px;
+  height: 120px;
+  fill: url(#orange-to-pink);
+  position: absolute;
+  top: -130px;
+  left: auto;
+  right: 40px;
+  z-index: 1;
+}
+@media (min-width: 800px) {
+  .homepage__logo-star {
+    top: -90px;
+    left: var(--gap);
+  }
+}
 .homepage__svg-store._hidden {
   opacity: 0;
   visibility: hidden;
@@ -621,6 +637,9 @@
   opacity: 1;
 }
 .footer {
+  position: relative;
+  background-color: inherit;
+  z-index: 2;
   color: white;
 }
 .footer__inner {
@@ -628,11 +647,6 @@
   margin: 0 auto;
   padding-left: var(--gap);
   padding-right: var(--gap);
-}
-.footer__logo-star {
-  width: 120px;
-  height: 120px;
-  fill: url(https://css-tricks.com/wp-content/themes/CSS-Tricks-18/style.css?ver=cache_bust=1622819319625#orange-to-pink);
 }
 .footer__message {
   display: grid;
