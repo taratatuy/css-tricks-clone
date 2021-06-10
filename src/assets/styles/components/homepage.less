@@ -59,6 +59,25 @@
         }
     }
 
+    // .homepage__logo-star
+    &__logo-star {
+        width: 120px;
+        height: 120px;
+        fill: url(#orange-to-pink);
+
+        position: absolute;
+        top: -130px;
+        left: auto;
+        right: 40px;
+
+        z-index: @main-z-index - 1;
+
+        @media (min-width: @medium-screen-width) {
+            top: -90px;
+            left: var(--gap);
+        }
+    }
+
     // .homepage__svg-store
     &__svg-store {
         // .homepage__svg-store._hidden

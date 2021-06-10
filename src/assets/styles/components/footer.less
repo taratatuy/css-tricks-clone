@@ -1,16 +1,13 @@
 .footer {
+    position: relative;
+    background-color: inherit;
+    z-index: @main-z-index;
+
     color: white;
 
     // .fooret__inner
     &__inner {
         .main-width-content;
-    }
-
-    // .footer__logo-star
-    &__logo-star {
-        width: 120px;
-        height: 120px;
-        fill: url(https://css-tricks.com/wp-content/themes/CSS-Tricks-18/style.css?ver=cache_bust=1622819319625#orange-to-pink);
     }
 
     // .footer__message
@@ -74,10 +71,6 @@
         @media (min-width: @large-screen-width) {
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
-    }
-
-    // .footer__info-column
-    &__info-column {
     }
 
     // .footer__heading
