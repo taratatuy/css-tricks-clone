@@ -21,7 +21,7 @@
             background: @main-gradient;
             box-shadow: -10px 0 20px 3px #000;
 
-            z-index: 3;
+            z-index: @main-z-index + 1;
         }
     }
 
@@ -56,7 +56,7 @@
 
         & > * {
             position: relative;
-            z-index: 3;
+            z-index: @main-z-index + 1;
         }
 
         .gradient-border;
@@ -85,7 +85,7 @@
 
         transition: 0.2s;
 
-        z-index: 2;
+        z-index: @main-z-index;
 
         color: #fff;
         font-size: 1.2rem;

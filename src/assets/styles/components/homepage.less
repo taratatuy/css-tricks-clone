@@ -44,12 +44,19 @@
     // .homepage__main
     &__main {
         padding-top: var(--gap);
-
         .main-width-content;
     }
 
     // .homepage__footer
     &__footer {
+        margin-top: 20rem;
+        padding-bottom: var(--gap);
+
+        background-color: @almost-black;
+
+        @media (min-width: @medium-screen-width) {
+            margin-top: calc(var(--gap) * 5);
+        }
     }
 
     // .homepage__svg-store

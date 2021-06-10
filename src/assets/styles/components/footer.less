@@ -1,0 +1,94 @@
+.footer {
+    color: white;
+
+    // .fooret__inner
+    &__inner {
+        .main-width-content;
+    }
+
+    // .footer__logo-star
+    &__logo-star {
+        width: 120px;
+        height: 120px;
+        fill: url(https://css-tricks.com/wp-content/themes/CSS-Tricks-18/style.css?ver=cache_bust=1622819319625#orange-to-pink);
+    }
+
+    // .footer__message
+    &__message {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--gap);
+
+        @media (min-width: @medium-screen-width) {
+            grid-template-columns: 1fr 1.4fr;
+        }
+    }
+
+    // .footer__credit
+    &__credit {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin: 2rem 0 0;
+    }
+
+    // .footer__form
+    &__form {
+        padding: 1.5rem;
+        margin-top: -3rem;
+
+        position: relative;
+
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        background-color: @font-black;
+
+        order: -1;
+
+        @media (min-width: @medium-screen-width) {
+            order: initial;
+        }
+
+        // .footer__form::after
+        &::after {
+            content: ' ';
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 100%;
+            width: var(--gap);
+            height: 3rem;
+            background: #909090;
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        }
+    }
+
+    // .footer__info
+    &__info {
+        padding-top: 1.5rem;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media (min-width: @large-screen-width) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+
+    // .footer__info-column
+    &__info-column {
+    }
+
+    // .footer__heading
+    &__heading {
+        color: @orange;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+
+    // .footer__link
+    &__link {
+        line-height: 1.25;
+        font-size: 1.1rem;
+    }
+}
