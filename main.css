@@ -317,6 +317,7 @@
 .card-content {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 .card-content__time {
   margin: 0 0 0.25rem;
